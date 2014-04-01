@@ -19,6 +19,7 @@
 		121E515718E79BF600789FD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121E513F18E79BF600789FD6 /* UIKit.framework */; };
 		121E515F18E79BF600789FD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 121E515D18E79BF600789FD6 /* InfoPlist.strings */; };
 		121E516118E79BF600789FD6 /* MyTodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 121E516018E79BF600789FD6 /* MyTodoListTests.m */; };
+		121E516B18EB275C00789FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121E516A18EB275C00789FD6 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		121E515C18E79BF600789FD6 /* MyTodoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTodoListTests-Info.plist"; sourceTree = "<group>"; };
 		121E515E18E79BF600789FD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		121E516018E79BF600789FD6 /* MyTodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTodoListTests.m; sourceTree = "<group>"; };
+		121E516A18EB275C00789FD6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				121E514A18E79BF600789FD6 /* XYZAppDelegate.h */,
 				121E514B18E79BF600789FD6 /* XYZAppDelegate.m */,
+				121E516A18EB275C00789FD6 /* Main.storyboard */,
 				121E514D18E79BF600789FD6 /* Images.xcassets */,
 				121E514218E79BF600789FD6 /* Supporting Files */,
 			);
@@ -192,6 +195,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					121E513718E79BF600789FD6 = {
+						DevelopmentTeam = 5PXSW8S5E4;
+					};
 					121E515218E79BF600789FD6 = {
 						TestTargetID = 121E513718E79BF600789FD6;
 					};
@@ -220,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				121E516B18EB275C00789FD6 /* Main.storyboard in Resources */,
 				121E514618E79BF600789FD6 /* InfoPlist.strings in Resources */,
 				121E514E18E79BF600789FD6 /* Images.xcassets in Resources */,
 			);
@@ -358,10 +365,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTodoList/MyTodoList-Prefix.pch";
 				INFOPLIST_FILE = "MyTodoList/MyTodoList-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTodoList/MyTodoList-Prefix.pch";
 				INFOPLIST_FILE = "MyTodoList/MyTodoList-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -438,6 +451,7 @@
 				121E516618E79BF600789FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		121E516718E79BF600789FD6 /* Build configuration list for PBXNativeTarget "MyTodoListTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +460,7 @@
 				121E516918E79BF600789FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
